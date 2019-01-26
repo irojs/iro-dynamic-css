@@ -1,4 +1,4 @@
-> This plugin is for [iro.js v4](https://github.com/jaames/iro.js/tree/v4/src), which is currently in beta. This documentation may be subject to change. For more info, join the v4 discussion thread [here](https://github.com/jaames/iro.js/issues/30) -- we're looking for feedback and help with testing!
+> This plugin is for [iro.js v4](https://github.com/jaames/iro.js/tree/v4), which is currently in beta. This documentation may be subject to change. For more info, join the v4 discussion thread [here](https://github.com/jaames/iro.js/issues/30) -- we're looking for feedback and help with testing!
 
 <h1 align="center">iro-dynamic-css</h1>
 
@@ -154,7 +154,7 @@ input, button {
 
 ### CSS Variables
 
-[CSS variables](https://alligator.io/css/css-variables/) can also be used, provided that the browser supports them. Variables are defined as properties that begin with a double-dash (`--`). 
+[CSS variables](https://alligator.io/css/css-variables/) can also be used, provided that the browser supports them. Variables are defined using properties that begin with a double-dash (`--`). 
 
 ```js
 var colorPicker = new iro.ColorPicker([
@@ -169,7 +169,7 @@ var colorPicker = new iro.ColorPicker([
 ])
 ```
 
-By adding the variables to the `:root` psuedo-class, we ensure that they are globally accessible, so you can reference them anywhere in your project's CSS:
+By adding the variables to the `:root` psuedo-class, we ensure that they are globally accessible so you can reference them anywhere in your project's CSS:
 
 ```css
 .example {
@@ -242,3 +242,5 @@ var stylesheet = new Stylesheet();
 // Set the background of all elements with the CSS class 'example' to red
 stylesheet.setRule('.example', 'background', '#f00');
 ```
+
+© [James Daniel](https://github.com/jaames)
