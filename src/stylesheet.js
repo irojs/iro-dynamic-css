@@ -72,7 +72,7 @@ export default class Stylesheet {
   */
   get cssText() {
     const { map } = this;
-    Object.keys(map).map(selector => {
+    return Object.keys(map).map(selector => {
       const selectorText = selector.replace(/,\W/g, ',\n');
       const ruleText = map[selector].cssText.replace(/;\W/g, ';\n\t');
       return `${selectorText} {\n\t${ruleText}\n}`;
@@ -92,6 +92,7 @@ export default class Stylesheet {
         const property = ruleSet[i];
         result[selector][property] = ruleSet.getPropertyValue(property);
       }
+      return result;
     }, {});
   }
 }

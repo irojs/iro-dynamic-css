@@ -1,5 +1,5 @@
 /*!
- * iro-dynamic-css v1.0.0
+ * iro-dynamic-css v1.0.2
  * iro.js plugin to dynamically update CSS rules whenever the selected color changes
  * 2019 James Daniel
  * Licensed under MPL 2.0
@@ -146,7 +146,7 @@ var DynamicCssPlugin = function DynamicCssPlugin(iro, pluginOptions) {
   });
   iro.Stylesheet = _stylesheet_js__WEBPACK_IMPORTED_MODULE_0__["default"];
   iro.dynamicCss = {
-    version: "1.0.0"
+    version: "1.0.2"
   };
 };
 
@@ -255,7 +255,7 @@ function () {
     key: "cssText",
     get: function get() {
       var map = this.map;
-      Object.keys(map).map(function (selector) {
+      return Object.keys(map).map(function (selector) {
         var selectorText = selector.replace(/,\W/g, ',\n');
         var ruleText = map[selector].cssText.replace(/;\W/g, ';\n\t');
         return "".concat(selectorText, " {\n\t").concat(ruleText, "\n}");
@@ -278,6 +278,8 @@ function () {
           var property = ruleSet[i];
           result[selector][property] = ruleSet.getPropertyValue(property);
         }
+
+        return result;
       }, {});
     }
   }]);

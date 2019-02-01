@@ -1,6 +1,6 @@
 {
   "name": "iro-dynamic-css",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "iro.js plugin to dynamically update CSS rules whenever the selected color changes",
   "module": "src/index.js",
   "main": "dist/iro-dynamic-css.js",

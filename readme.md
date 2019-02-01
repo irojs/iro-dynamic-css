@@ -27,7 +27,7 @@
 </p>
 
 <p align="center">
-<a href="#features">Features</a> | <a href="#installation">Installation</a> | <a href="#usage">Usage</a> | <a href="#stylesheet-api">Stylesheet API</a>
+  <a href="#features">Features</a> | <a href="#installation">Installation</a> | <a href="#usage">Usage</a> | <a href="#stylesheet-api">Stylesheet API</a>
 </p>
 
 <br/>
@@ -88,7 +88,7 @@ Then add it to the `<head>` of your page with a `<script>` tag **after iro.js**:
 ### Using the unpkg CDN
 
 ```html
-<script src="https://unpkg.com/iro-dynamic-css/dist/iro-dynamic-css.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/iro-dynamic-css/dist/iro-dynamic-css.min.js"></script>
 ```
 
 <br/>
