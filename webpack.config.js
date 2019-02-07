@@ -20,6 +20,7 @@ module.exports = {
     library: 'iroDynamicCss',
     libraryExport: 'default',
     libraryTarget: 'umd',
+    umdNamedDefine: true,
     // for some reason webpack 4's umd implementation uses window as a global object
     // this means that these modules won't work in node js environments unless you manually change this
     // see https://github.com/webpack/webpack/issues/6522#issuecomment-371120689
