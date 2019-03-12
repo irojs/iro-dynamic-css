@@ -1,5 +1,3 @@
-> This plugin is for [iro.js v4](https://github.com/jaames/iro.js/tree/v4), which is currently in beta. This documentation may be subject to change. For more info, join the v4 discussion thread [here](https://github.com/jaames/iro.js/issues/30) -- we're looking for feedback and help with testing!
-
 <h1 align="center">iro-dynamic-css</h1>
 
 <br/>
@@ -85,7 +83,7 @@ Then add it to the `<head>` of your page with a `<script>` tag **after iro.js**:
 </html>
 ```
 
-### Using the unpkg CDN
+### Using the jsDelivr CDN
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/iro-dynamic-css/dist/iro-dynamic-css.min.js"></script>
