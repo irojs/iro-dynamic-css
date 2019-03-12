@@ -1,5 +1,5 @@
 /*!
- * iro-dynamic-css v1.0.3
+ * iro-dynamic-css v1.0.4
  * iro.js plugin to dynamically update CSS rules whenever the selected color changes
  * 2019 James Daniel
  * Licensed under MPL 2.0
@@ -136,17 +136,14 @@ var DynamicCssPlugin = function DynamicCssPlugin(iro, pluginOptions) {
   iro.ColorPicker.addHook('init:before', function () {
     this.css = this.props.css || {};
     this.updateStylesheet = throttleDelay ? Object(_util_js__WEBPACK_IMPORTED_MODULE_1__["throttle"])(updateStylesheet.bind(this), throttleDelay) : updateStylesheet.bind(this);
-  });
-  iro.ColorPicker.addHook('mount', function () {
     this.stylesheet = new _stylesheet_js__WEBPACK_IMPORTED_MODULE_0__["default"]();
-    this.updateStylesheet();
   });
   iro.ColorPicker.addHook('color:afterUpdate', function () {
     this.updateStylesheet();
   });
   iro.Stylesheet = _stylesheet_js__WEBPACK_IMPORTED_MODULE_0__["default"];
   iro.dynamicCss = {
-    version: "1.0.3"
+    version: "1.0.4"
   };
 };
 

@@ -19,11 +19,7 @@ const DynamicCssPlugin = function(iro, pluginOptions) {
   iro.ColorPicker.addHook('init:before', function() {
     this.css = this.props.css || {};
     this.updateStylesheet = throttleDelay ? throttle(updateStylesheet.bind(this), throttleDelay) : updateStylesheet.bind(this);
-  });
-
-  iro.ColorPicker.addHook('mount', function() {
     this.stylesheet = new IroStylesheet();
-    this.updateStylesheet();
   });
 
   iro.ColorPicker.addHook('color:afterUpdate', function() {

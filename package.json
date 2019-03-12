@@ -1,6 +1,6 @@
 {
   "name": "iro-dynamic-css",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "iro.js plugin to dynamically update CSS rules whenever the selected color changes",
   "main": "dist/iro-dynamic-css.js",
   "files": [
@@ -28,7 +28,7 @@
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
-    "@jaames/iro": "^4.0.0-beta.4",
+    "@jaames/iro": "^4.2.0",
     "babel-loader": "^8.0.5",
     "cross-env": "^5.2.0",
     "html-webpack-plugin": "^3.2.0",
