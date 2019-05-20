@@ -121,7 +121,7 @@ iro.use(iroDynamicCss, {
 The plugin adds a new `css` config option to `iro.ColorPicker`, dynamic CSS rules can be passed to this option as a CSS "template" formatted as a JavaScript object.
 
 ```js
-var colorPicker = new iro.ColorPicker([
+var colorPicker = new iro.ColorPicker({
   width: 320,
   color: {r: 255, g: 100, b: 100},
   // ... etc
@@ -134,7 +134,7 @@ var colorPicker = new iro.ColorPicker([
       'color': '$color'
     }
   }
-])
+})
 ```
 
 `$color` is treated as a variable representing the currently selected color. To demonstrate, let's say the currently selected color is `rgb(255, 0, 0)`. Using the template above, the CSS applied to the page would look something like this:
