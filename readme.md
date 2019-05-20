@@ -155,7 +155,7 @@ input, button {
 [CSS variables](https://alligator.io/css/css-variables/) can also be used, provided that the browser supports them. Variables are defined using properties that begin with a double-dash (`--`). 
 
 ```js
-var colorPicker = new iro.ColorPicker([
+var colorPicker = new iro.ColorPicker({
   width: 320,
   color: {r: 255, g: 100, b: 100},
   // ... etc
@@ -164,7 +164,7 @@ var colorPicker = new iro.ColorPicker([
       '--selected-color': '$color'
     }
   }
-])
+})
 ```
 
 By adding the variables to the `:root` psuedo-class, we ensure that they are globally accessible so you can reference them anywhere in your project's CSS:
